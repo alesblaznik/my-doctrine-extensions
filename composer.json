@@ -1,5 +1,6 @@
 {
     "name": "my/doctrine-extensions",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ales Blaznik",
@@ -7,6 +8,6 @@
         }
     ],
     "require": {
-
+        "doctrine/dbal": "2.3.4"
     }
 }
