@@ -1,0 +1,12 @@
+{
+    "name": "my/doctrine-extensions",
+    "authors": [
+        {
+            "name": "Ales Blaznik",
+            "email": "ales.blaznik@dlabs.si"
+        }
+    ],
+    "require": {
+
+    }
+}
