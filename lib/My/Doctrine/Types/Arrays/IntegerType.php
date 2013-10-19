@@ -36,7 +36,7 @@ class IntegerType extends Type
             throw TypesException::invalidValue($this->getName(), 'one dimensional array of integers');
         }
 
-        return 'ARRAY' . $arrayConstructorParameters;
+        return '{' . substr($arrayConstructorParameters, 1, -1) . '}';
     }
 
     public function convertToPHPValue($value, AbstractPlatform $platform)

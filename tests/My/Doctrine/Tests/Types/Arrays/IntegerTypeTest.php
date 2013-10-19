@@ -46,7 +46,7 @@ class IntegerTypeTest extends MyDoctrineTestCase
     public function testSingleValueToDatabaseConversion()
     {
         $this->assertEquals(
-            'ARRAY[123]',
+            '{123}',
             $this->_type->convertToDatabaseValue(123, $this->_platform)
         );
     }
@@ -54,7 +54,7 @@ class IntegerTypeTest extends MyDoctrineTestCase
     public function testSingleValueOfZeroToDatabaseConversion()
     {
         $this->assertEquals(
-            'ARRAY[0]',
+            '{0}',
             $this->_type->convertToDatabaseValue(0, $this->_platform)
         );
     }
@@ -62,7 +62,7 @@ class IntegerTypeTest extends MyDoctrineTestCase
     public function testArrayOfValuesToDatabaseValue()
     {
         $this->assertEquals(
-            'ARRAY[123,456,789]',
+            '{123,456,789}',
             $this->_type->convertToDatabaseValue(
                 array(123, 456, 789),
                 $this->_platform)
