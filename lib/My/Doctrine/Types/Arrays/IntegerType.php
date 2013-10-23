@@ -30,7 +30,7 @@ class IntegerType extends Type
         }
 
         $arrayConstructorParameters =
-            json_encode($value, JSON_NUMERIC_CHECK | JSON_UNESCAPED_UNICODE, 1);
+            json_encode($value, JSON_NUMERIC_CHECK | JSON_UNESCAPED_UNICODE);
 
         if (false === $arrayConstructorParameters) {
             throw TypesException::invalidValue($this->getName(), 'one dimensional array of integers');
